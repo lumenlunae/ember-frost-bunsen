@@ -44,7 +44,8 @@ export default DetailComponent.extend({
       PropTypes.EmberObject,
       PropTypes.null,
       PropTypes.object
-    ])
+    ]),
+    validationErrors: PropTypes.EmberObject
   },
 
   getDefaultProps () {
@@ -60,6 +61,12 @@ export default DetailComponent.extend({
       validators: [],
       value: null
     }
+  },
+
+  
+  validationErrors: Ember.computed(function() {
+    this.triggerValidation();
+    return {};
   },
 
   // == Functions ==============================================================

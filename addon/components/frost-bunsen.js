@@ -20,7 +20,8 @@ const keys = [
   'renderers',
   'showAllErrors',
   'validators',
-  'value'
+  'value',
+  'errors'
 ]
 
 export default Component.extend(SpreadMixin, HookMixin, {
