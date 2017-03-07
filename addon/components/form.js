@@ -63,11 +63,11 @@ export default DetailComponent.extend({
     }
   },
 
-  
+
   validationErrors: Ember.computed(function() {
     this.triggerValidation();
     return {};
-  },
+  }),
 
   // == Functions ==============================================================
 
